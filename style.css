@@ -7,7 +7,7 @@
     --cor-destaque: #0342A6;
     --cor-detalhes:#F2BC79;
     --cor-fundo: #F5F5F5;
-    --cor-fundo2: #f5f5f5e6;
+    --cor-fundo2: #e2e2e2e6;
     --cor-texto: #0D0D0D;
 }
 
@@ -98,8 +98,13 @@ footer {
 }
 
 .col_rodape {
-    width: 0px;
+    width: 100%;
     height: 100%;
+    background-color: #00B5B2;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*-------------Fechamento Footer--------------*/
@@ -123,21 +128,42 @@ section {
 }
 
 .linha1{
-    background-color: rgb(0, 35, 65);
+    background-color: var(--cor-fundo);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.escrita_bio{
-    background-color: #F2BC79;
-    width: 52%;
-    height: 500px;
+.linha1 h4{
+    font-size: 25px;
 }
 
+.linha1 h2{
+    font-size: 45px;
+}
+
+.linha4{
+    background-color: var(--cor-fundo);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.escrita_bio{
+    width: 59%;
+    height: 570px;
+    font-size: 30px;
+    font-family: Poppins;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
 .img_bio{
-    background-color: rgb(232, 232, 232);
+    background-color: var(--cor-fundo);
     width: 40%;
     height: 320px;
     display: flex;
@@ -151,7 +177,7 @@ section {
 }
 
 .container1{
-    background-color: #0D0D0D;
+    background-color: var(--cor-fundo);
     width: 95%;
     height: 700px;
     display: flex;
@@ -161,4 +187,273 @@ section {
     justify-content: space-around;
 }
 
+.container2{
+    background-color: var(--cor-fundo2);
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: #000000 0.5px solid;
+    border-bottom: #000000 0.5px solid;
+}
+
+.container3{
+    background-color: var(--cor-fundo2);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: #000000 0.5px solid;
+    border-bottom: #000000 0.5px solid;
+}
+
+.container4{
+    background-color: var(--cor-fundo);
+    width: 90%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.titulo{
+    background-color: var(--cor-fundo2);
+    width: 80%;
+    height: 60px;
+    font-size: 39px;
+    font-family: Poppins;  
+    text-align: center;
+}
+
+.titulo2{
+    background-color: var(--cor-fundo);
+    width: 80%;
+    height: 60px;
+    font-size: 39px;
+    font-family: Poppins;  
+    text-align: center;
+}
+
+.txt1{
+    background-color:var(--cor-fundo2);
+    width: 80%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    font-size:19px;
+    font-family: Poppins;  
+}
+
+.txt2{
+    background-color:var(--cor-fundo);
+    width: 80%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    font-size:19px;
+    font-family: Poppins;  
+}
+
+.java1{
+    background-color: var(--cor-fundo2);
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sub_txt1{
+    background-color: var(--cor-fundo2);
+    width: 45%;
+    height: 90%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Poppins;  
+}
+
+.img_java{
+    background-color: var(--cor-fundo);
+    width: 45%;
+    height: 90%;
+}
+
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 3px;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--cor-fundo);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.carousel .prev {
+  left: -10px;
+}
+
+.carousel .next {
+  right: -10px;
+}
+
+.restaurante{
+    width: 100%;
+    height: 400px;
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurante_img{
+    background-color: var(--cor-fundo);
+    width: 24%;
+    height: 350px;
+}
+
+.localizacao_img{
+    width: 38%;
+    height: 450px;
+    background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 3px;
+}
+
+.localizacao_texto{
+    background-color: var(--cor-fundo2);
+    width: 60%;
+    height: 500px;
+    font-family: Poppins;
+    font-size: 30px;
+    text-align: center;
+}
+
+.localizacao_texto h2{
+    font-family: Kalam;
+}
+
+.reserva{
+    background-color: var(--cor-fundo);
+    width: 45%;
+    height: 90%;
+    font-family: Poppins;
+    font-size: 29px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -80px;
+}
+
+.contato{
+    background-color: var(--cor-fundo);
+    width: 55%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -200px;
+}
+
+.contato p{
+    font-family: poppins;
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: 800;
+}
+
+.redes{
+    background-color: var(--cor-fundo);
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.redes h2{
+    margin-left: 20px;
+    font-family: Kalam;
+    font-size: 30px;
+}
+
+input{
+    width: 200px;
+    height: 28px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-family: Poppins;
+    background-color: #5c5c5c;
+    color: #F5F5F5;
+}
+
+.input2{
+    width: 60px;
+    height: 28px;
+    margin-top: 10px;
+}
+
+button{
+    width: 200px;
+    height: 45px;
+    font-size: 28px;
+    font-family: Poppins;
+    border-radius: 5px;
+    font-weight: 700;
+    border:none;
+    background-color: var(--cor-detalhes);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-fundo);
+  color: #ffff;
+}
+
+.rodape{
+    width: 90%;
+}
+
+.rodape p{
+    font-family: Kalam;
+    font-size: 30px;
+    color: #ffff;
+}
 
